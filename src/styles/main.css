@@ -1,0 +1,138 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+    margin-bottom: 80px; /* Adjust this value to leave space for the footer */
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(238, 234, 234, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 44px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 50px;
+  }
+  
+  /* Navigation styles */
+  .nav {
+    margin-top: 20px;
+  }
+  
+  .nav-tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 41px;
+    padding-top: 2px;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #f7f1f1;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .nav-link.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Profile styles */
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-text {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    margin-top: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Animation styles */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to relevant elements */
+  .header,
+  .image-container,
+  .profile-text {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #514c4c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer a {
+    margin: 0 10px;
+  }
+  
+  .footer img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    transition: filter 0.3s;
+  }
+  
+  .footer img:hover {
+    filter: invert(0.5);
+  }
+  

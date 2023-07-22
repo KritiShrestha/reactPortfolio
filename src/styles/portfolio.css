@@ -1,0 +1,110 @@
+/* .portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .portfolio-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    justify-items: center;
+  }
+  
+  .portfolio-item {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.1);
+  }
+   */
+
+   /* Portfolio component styles */
+
+/* Portfolio component styles */
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Portfolio component styles */
+
+/* ... (Other CSS rules) */
+
+.project-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px); /* 3 items per row with gap of 20px */
+  margin-bottom: 50px;
+  height: 300px; /* Set a fixed height, adjust as needed */
+}
+
+/* ... (Other CSS rules) */
+
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 166px
+
+}
+
+.project-links a {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #e3e3e3;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .project-list {
+    justify-content: center;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+}
+

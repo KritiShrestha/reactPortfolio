@@ -1,0 +1,45 @@
+
+
+/* .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+  }
+   */
+
+   /* Add styles for the header */
+/* Add styles for the header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8ab9cb;
+  padding-bottom: 100px;
+  color: #000000;
+  font-style:inherit;
+}
+
+.logo {
+  margin: 0;
+  color: rgb(8, 6, 111);
+}
+
+/* Add styles for the nav tabs container */
+.nav-tabs-container {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}

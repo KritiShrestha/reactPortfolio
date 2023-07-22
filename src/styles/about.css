@@ -1,0 +1,40 @@
+/* Add styles for the about container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #50669f;; /* Pastel gray background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Add styles for the "About Me" heading */
+.about-container h2 {
+  color: #f4eeee; /* Pastel purple heading text */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Add styles for the profile image container */
+/* .image-container {
+  margin-top: 20px;
+} */
+
+/* Add styles for the profile image */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Make the image circular if it's a portrait photo */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  /* Add any other styles you want for the image */
+}
+
+/* Add styles for the about me paragraph */
+.aboutme-paragraph {
+  font-size: 22px;
+  line-height: 1.6;
+  color:#ffffff; /* Pastel blue-gray text color */
+  /* Add any other styles you want for the paragraph */
+  margin-top: 20px;
+}
+
