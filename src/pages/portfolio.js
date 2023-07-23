@@ -116,27 +116,29 @@ const Portfolio = () => {
       Link: 'https://kritishrestha.github.io/weather-dashboard',
     },
   ];
-
   return (
     <section>
       <h2>Portfolio</h2>
       <div className="project-list">
         {projects.map((project) => (
           <div className="project-item" key={project.id}>
-            <h3>{project.title}</h3>
-            {project.images && <img src={project.images} alt={project.title} />}
-            <div className="project-links">
-              <p>
-                <a href={project.githubRepo} target="_blank" rel="noopener noreferrer">
-                  GitHub Repo
-                </a>
-              </p>
-              <p>
+            <div className="project-image-container">
+              {/* Wrap the image with an anchor tag to link to the Live Demo */}
+              {project.images && (
                 <a href={project.Link} target="_blank" rel="noopener noreferrer">
-                  Live Demo
+                  <img src={project.images} alt={project.title} />
                 </a>
-              </p>
+              )}
+              <div className="project-link-tab">
+                {/* Render the "GitHub Repo" link tab */}
+                {project.githubRepo && (
+                  <a href={project.githubRepo} className= "git" target="_blank" rel="noopener noreferrer">
+                    GitHub Repo
+                  </a>
+                )}
+              </div>
             </div>
+            <h3>{project.title}</h3>
           </div>
         ))}
       </div>
@@ -145,3 +147,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
