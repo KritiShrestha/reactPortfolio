@@ -62,49 +62,56 @@
 //   );
 // }
 import React from 'react';
-import '../styles/portfolio.css';
+import '../styles/portfolio.css'; // Import the CSS file for styling
+
+import portfolio from '../assets/images/Professional-Portfolio_screenshot.png';
+import passwordGenerator from '../assets/images/Password Generator.PNG';
+import vinylvibes from '../assets/images/homepage.png';
+import codeQuiz from '../assets/images/code-quiz.png';
+import workdayScheduler from '../assets/images/workday-scheduler.png';
+import weatherDashboard from '../assets/images/weather-dashboard.png';
 
 const Portfolio = () => {
   const projects = [
     {
       id: 0,
       title: 'Professional Portfolio',
-      images: './assets/images/Professional-Portfolio_screenshot.png',
+      images: portfolio,
       githubRepo: 'https://kritishrestha.github.io/Professional-Portfolio',
       Link: 'https://kritishrestha.github.io/Professional-Portfolio',
     },
     {
       id: 1,
       title: 'Password Generator',
-      images: '../assets/images/Password Generator.PNG',
+      images: passwordGenerator,
       githubRepo: 'https://github.com/KritiShrestha/Password-generator',
       Link: 'https://kritishrestha.github.io/Password-generator/',
     },
     {
       id: 2,
       title: 'vinylvibes',
-      images: '../assets/images/homepage.png',
+      images: vinylvibes,
       githubRepo: 'https://github.com/dimartoro/vinyl-vibes',
       Link: 'https://vinyl-vibes-lp-cda464cf0a39.herokuapp.com/',
     },
     {
       id: 3,
       title: 'Code-Quiz',
-      images: '../assets/images/code-quiz.png',
+      images: codeQuiz,
       githubRepo: 'https://github.com/KritiShrestha/Code-quiz',
       Link: 'https://kritishrestha.github.io/Code-quiz',
     },
     {
       id: 4,
       title: 'Work-day Scheduler',
-      images: '../assets/images/workday-scheduler.png',
+      images: workdayScheduler,
       githubRepo: 'https://kritishrestha.github.io/workday-scheduler',
       Link: 'https://kritishrestha.github.io/workday-scheduler',
     },
     {
       id: 5,
       title: 'Weather dashboard',
-      images: '../assets/images/weather-dashboard.png',
+      images: weatherDashboard,
       githubRepo: 'https://github.com/KritiShrestha/weather-dashboard',
       Link: 'https://kritishrestha.github.io/weather-dashboard',
     },
@@ -136,4 +143,5 @@ const Portfolio = () => {
     </section>
   );
 };
+
 export default Portfolio;
